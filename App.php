@@ -13,7 +13,7 @@ use View\TodolistViewImpl;
 
 echo "Aplikasi Todolist" . PHP_EOL;
 
-$connection = \Config\Database::getConnect();
+$connection = \Config\Database::getConnection();
 $todolistRepository = new TodolistRepositoryImpl($connection);
 $todolistService = new TodolistServiceImpl($todolistRepository);
 $todolistView = new TodolistViewImpl($todolistService);

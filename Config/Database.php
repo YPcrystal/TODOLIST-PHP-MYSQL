@@ -5,7 +5,7 @@ namespace Config {
     class Database
     {
 
-        static function getConnection(): \PASSWORD_DEFAULT
+        static function getConnection(): \PDO
         {
             $host = "localhost";
             $port = 3306;

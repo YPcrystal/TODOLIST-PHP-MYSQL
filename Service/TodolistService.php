@@ -6,10 +6,10 @@ namespace Service {
     interface TodolistService {
         function showTodolist(): void;
         function addTodolist(string $todo): void;
-        function removeTodolist(int $number): bool;
+        function removeTodolist(int $number): void;
     }
 
-    class TodolistServiceIMpl implements TodolistService {
+    class TodolistServiceImpl implements TodolistService {
         private TodolistRepository $todolistRepository;
 
         public function __construct(TodolistRepository $todolistRepository) {
