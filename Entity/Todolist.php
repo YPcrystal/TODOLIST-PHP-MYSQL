@@ -6,7 +6,7 @@ namespace Entity {
         private int $id;
         private string $todo;
 
-        public function __contruct(string $todo = "") {
+        public function __construct(string $todo = "") {
             $this->todo = $todo;
         }
 

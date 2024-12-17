@@ -45,12 +45,12 @@ namespace View {
         }
 
         function removeTodolist(): void {
-            echo "MENAMBAH TODO" . PHP_EOL;
+            echo "MENGHAPUS TODO" . PHP_EOL;
             $pilihan = InputHelper::input("Todo (x untuk batal)");
             if ($pilihan == "x") {
                 echo "Batal menghapus todo" . PHP_EOL;
             } else {
-                $this->todolistService->removeTodolist($piliham);
+                $this->todolistService->removeTodolist($pilihan);
             }           
         }
     }   
